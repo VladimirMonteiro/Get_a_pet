@@ -25,7 +25,7 @@ const Register = () => {
         e.preventDefault()
         //enviar usuario para o banco
         console.log(user)
-        register(user)
+         register(user)
     }
     
     
@@ -35,7 +35,7 @@ const Register = () => {
             <h1>Registrar</h1>
             <form onSubmit={handleSubmit}>
                 
-                <Input text='Nome' name='name' type='text' placeholder='Digite seu nome...' handleOnChange={handleChange} />
+                <Input text='Nome' name='name' id= 'name' type='text' placeholder='Digite seu nome...' handleOnChange={handleChange} />
                 <Input text='Telefone' name='phone' type='text' placeholder='Digite seu telefone...' handleOnChange={handleChange} />
                 <Input text='E-mail' name='email' type='email' placeholder='Digite seu E-mail...' handleOnChange={handleChange} />
                 <Input text='Password' name='password' type='password' placeholder='Digite sua senha...' handleOnChange={handleChange} />
