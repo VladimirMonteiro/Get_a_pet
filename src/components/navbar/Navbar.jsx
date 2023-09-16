@@ -20,7 +20,14 @@ const Navbar = () => {
             </div>
             <ul>
                 <li><Link to='/'>Adotar</Link></li>
-                {authenticaded ? (<><li onClick={logout}>Sair</li></>): 
+                {authenticaded ? (
+                <>  
+                    <li><Link to='/pets/mypets'>Meus pets</Link></li>
+                    <li><Link to='/users/profile'>Perfil</Link></li>
+                    <li onClick={logout}>Sair</li>
+                    
+                </>): 
+
                 (<>
                     <li><Link to='/login'>Entrar</Link></li>
                     <li><Link to='/register'>Registrar</Link></li>

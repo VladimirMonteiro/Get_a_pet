@@ -10,6 +10,9 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/home/Home.jsx'
 import Register from './pages/register/Register.jsx'
 import Login from './pages/login/Login.jsx'
+import Profile from './pages/user/Profile.jsx'
+import MyPets from './pages/pets/MyPets.jsx'
+import AddPet from './pages/pets/AddPet.jsx'
 
 const router = createBrowserRouter([
   {path:'/',
@@ -17,7 +20,10 @@ const router = createBrowserRouter([
   children: [
     {path: '/', element: <Home/>},
     {path: '/register', element: <Register/>},
-    {path: '/login', element: <Login/>}
+    {path: '/login', element: <Login/>},
+    {path: '/users/profile', element: <Profile/>},
+    {path: '/pets/mypets', element: <MyPets/>},
+    {path: '/pets/add', element: <AddPet/>}
   ]
   
   }
