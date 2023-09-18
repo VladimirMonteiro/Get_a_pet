@@ -12,6 +12,8 @@ const PetForm = ({handleSubmit, petData, btnText})=> {
     const colors = ['Branco', 'Caramelo', 'Preto', 'Cinza']
 
     function onFileChange(e){
+        
+        setPreview(Array.from(e.target.files))
         setPet({...pet, images: [...e.target.files]})
 
     }
@@ -29,13 +31,21 @@ const PetForm = ({handleSubmit, petData, btnText})=> {
     function submit(e){
         e.preventDefault()
         console.log(pet)
-       // handleSubmit(pet)
+       handleSubmit(pet)
 
     }
 
     return(
         <form className={formStyles.form_container} onSubmit={submit}>
-            <Input text='Imagens do pet' type='file' name='images' handleOnChange={onFileChange} multiple= {true}/>
+            <div className={formStyles.preview_pets_images} key={pet._id}>
+                {preview.length > 0 ? preview.map((image, index) => (
+                    <img src={URL.createObjectURL(image)} alt={pet.name} key={`${pet.name} + ${index}`} />
+
+                )): pet.images  && pet.images.map((image, index)=> (
+                    <img src={`${import.meta.env.VITE_API_URL}/images/pets/${image}`} alt={pet.name} key={`${pet.name} + ${index}`} />
+                )) }
+            </div>
+            <Input text='Imagens do pet' type='file' name='images' handleOnChange={onFileChange} multiple={true}/>
             <Input text='Nome do pet' type='text' name='name' placeholder='Digite o nome do pet' handleOnChange={handleChange} value={pet.name || ''}/>
             <Input text='Idade do pet' type='text' name='age' placeholder='Digite a idade do pet' handleOnChange={handleChange} value={pet.age || ''}/>
             <Input text='Peso do pet' type='text' name='weight' placeholder='Digite o peso do pet' handleOnChange={handleChange} value={pet.weight || ''}/>
