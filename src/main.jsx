@@ -14,6 +14,8 @@ import Profile from './pages/user/Profile.jsx'
 import MyPets from './pages/pets/MyPets.jsx'
 import AddPet from './pages/pets/AddPet.jsx'
 import EditPet from './pages/pets/EditPet.jsx'
+import PetDetails from './pages/pets/PetDetails.jsx'
+import MyAdoptions from './pages/pets/MyAdoptions.jsx'
 
 const router = createBrowserRouter([
   {path:'/',
@@ -25,7 +27,9 @@ const router = createBrowserRouter([
     {path: '/users/profile', element: <Profile/>},
     {path: '/pets/mypets', element: <MyPets/>},
     {path: '/pets/add', element: <AddPet/>},
-    {path: '/pets/edit/:id', element: <EditPet/>}
+    {path: '/pets/:id', element: <PetDetails/>},
+    {path: '/pets/edit/:id', element: <EditPet/>},
+    {path: 'pets/myadoptions', element: <MyAdoptions/>}
   ]
   
   }
