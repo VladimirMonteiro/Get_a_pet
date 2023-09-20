@@ -21,16 +21,16 @@ const Navbar = () => {
             <ul>
                 <li><Link to='/'>Adotar</Link></li>
                 {authenticaded ? (
-                <>  <li><Link to='/pets/myadoptions'>Minhas adoções</Link></li>
-                    <li><Link to='/pets/mypets'>Meus pets</Link></li>
-                    <li><Link to='/users/profile'>Perfil</Link></li>
+                <>  <li><Link to='/Get_a_pet/pets/myadoptions'>Minhas adoções</Link></li>
+                    <li><Link to='/Get_a_pet/pets/mypets'>Meus pets</Link></li>
+                    <li><Link to='/Get_a_pet/users/profile'>Perfil</Link></li>
                     <li onClick={logout}>Sair</li>
                     
                 </>): 
 
                 (<>
-                    <li><Link to='/login'>Entrar</Link></li>
-                    <li><Link to='/register'>Registrar</Link></li>
+                    <li><Link to='/Get_a_pet/login'>Entrar</Link></li>
+                    <li><Link to='/Get_a_pet/register'>Registrar</Link></li>
                 </>
                 )}
                 
