@@ -30,7 +30,7 @@ const Login = () => {
                 <Input type='password' text='Password' name='password' placeholder='Informe sua senha' handleOnChange={handleChange}/>
                 
                 <input type="submit" value="Entrar" />
-                <p>Não possui conta?<Link to={`${import.meta.env.DEPLOY.URL}/register`}>Clique aqui!</Link></p>
+                <p>Não possui conta?<Link to='/Get_a_pet/register'>Clique aqui!</Link></p>
             </form>
         </section>
     )
