@@ -18,18 +18,18 @@ import PetDetails from './pages/pets/PetDetails.jsx'
 import MyAdoptions from './pages/pets/MyAdoptions.jsx'
 
 const router = createBrowserRouter([
-  {path:'/',
+  {path:'/Get_a_pet/',
   element: <App/>,
   children: [
-    {path: '/Get_a_pet', element: <Home/>},
-    {path: '/register', element: <Register/>},
-    {path: '/login', element: <Login/>},
-    {path: '/users/profile', element: <Profile/>},
-    {path: '/pets/mypets', element: <MyPets/>},
-    {path: '/pets/add', element: <AddPet/>},
-    {path: '/pets/:id', element: <PetDetails/>},
-    {path: '/pets/edit/:id', element: <EditPet/>},
-    {path: 'pets/myadoptions', element: <MyAdoptions/>}
+    {path: '/Get_a_pet/', element: <Home/>},
+    {path: '/Get_a_pet/register', element: <Register/>},
+    {path: '/Get_a_pet/login', element: <Login/>},
+    {path: '/Get_a_pet/users/profile', element: <Profile/>},
+    {path: '/Get_a_pet/pets/mypets', element: <MyPets/>},
+    {path: '/Get_a_pet/pets/add', element: <AddPet/>},
+    {path: '/Get_a_pet/pets/:id', element: <PetDetails/>},
+    {path: '/Get_a_pet/pets/edit/:id', element: <EditPet/>},
+    {path: '/Get_a_petpets/myadoptions', element: <MyAdoptions/>}
   ]
   
   }
