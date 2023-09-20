@@ -18,7 +18,7 @@ import PetDetails from './pages/pets/PetDetails.jsx'
 import MyAdoptions from './pages/pets/MyAdoptions.jsx'
 
 const router = createBrowserRouter([
-  {path:'/Get_a_pet/',
+  {path:'/Get_a_pet',
   element: <App/>,
   children: [
     {path: '/Get_a_pet/', element: <Home/>},
@@ -37,6 +37,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+   <RouterProvider router={router}>
+      <App/>
+   </RouterProvider>
   </React.StrictMode>,
 )
