@@ -19,7 +19,7 @@ const Navbar = () => {
                 <h2>Get a pet</h2>
             </div>
             <ul>
-                <li><Link to='/'>Adotar</Link></li>
+                <li><Link to='/Get_a_pet'>Adotar</Link></li>
                 {authenticaded ? (
                 <>  <li><Link to='/Get_a_pet/pets/myadoptions'>Minhas adoções</Link></li>
                     <li><Link to='/Get_a_pet/pets/mypets'>Meus pets</Link></li>
