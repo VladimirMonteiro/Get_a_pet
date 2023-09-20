@@ -18,7 +18,7 @@ import PetDetails from './pages/pets/PetDetails.jsx'
 import MyAdoptions from './pages/pets/MyAdoptions.jsx'
 
 const router = createBrowserRouter([
-  {path:'/Get_a_pet',
+  {path:'/Get_a_pet/',
   element: <App/>,
   children: [
     {path: '/Get_a_pet/', element: <Home/>},
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     {path: '/Get_a_pet/pets/add', element: <AddPet/>},
     {path: '/Get_a_pet/pets/:id', element: <PetDetails/>},
     {path: '/Get_a_pet/pets/edit/:id', element: <EditPet/>},
-    {path: '/Get_a_petpets/myadoptions', element: <MyAdoptions/>}
+    {path: '/Get_a_pet/pets/myadoptions', element: <MyAdoptions/>}
   ]
   
   }
