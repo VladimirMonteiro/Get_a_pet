@@ -1,5 +1,5 @@
 {
-  "homepage": "https://VladimirMonteiro.github.io/Get_a_pet",
+  "homepage": "https://VladimirMonteiro.github.io/n",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "preinstall": "npx npm-force-resolutions",
-    "npm predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
