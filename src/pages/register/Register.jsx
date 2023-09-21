@@ -44,7 +44,7 @@ const Register = () => {
                 <input type="submit" value="Cadastrar" />
                
             </form>
-            <p>Já possui conta? <Link to={`/Get_a_pet/login`}>Clique aqui!</Link></p>
+            <p>Já possui conta? <Link to={`${import.meta.env.DEPLOY_URL}/login`}>Clique aqui!</Link></p>
         </section>
     )
 }
