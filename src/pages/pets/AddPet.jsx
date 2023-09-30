@@ -39,7 +39,7 @@ function AddPet() {
         })
         .then((response) => {
           console.log(response.data)
-          return response.data
+          return response.data.newPet
         })
         .catch((err) => {
           console.log(err)
