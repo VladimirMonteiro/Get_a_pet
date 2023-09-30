@@ -1,7 +1,7 @@
 import api from '../../utils/api'
 import RoundedImage from '../../components/roundedImage/RoundedImage'
 import { useState, useEffect } from 'react'
-import styles from './Mypets.module.css'
+
 
 export default function MyAdoptions(){
 
