@@ -4,13 +4,14 @@ import api from "../../utils/api"
 
 import useFlashMessage from "../../hooks/useFlashMessage"
 import RoundedImage from '../../components/roundedImage/RoundedImage'
+import style from './MyPets.module.css'
 
 
 
 export default function MyPets(){
 
     const [pets, setPets] = useState([])
-    const [token] = useState(localStorage.getItem('token' || ''))
+    const [token] = useState(localStorage.getItem('token' || '')
     const {setFlashMessage} = useFlashMessage()
 
 
