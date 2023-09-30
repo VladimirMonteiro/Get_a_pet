@@ -5,7 +5,7 @@ import api from "../../utils/api"
 import useFlashMessage from "../../hooks/useFlashMessage"
 import RoundedImage from '../../components/roundedImage/RoundedImage'
 
-import style from './Mypets.module.css'
+import style from './MyPets.module.css'
 
 export default function MyPets(){
 
