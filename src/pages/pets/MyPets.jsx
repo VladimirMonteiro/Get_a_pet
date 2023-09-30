@@ -11,7 +11,7 @@ import style from './MyPets.module.css'
 export default function MyPets(){
 
     const [pets, setPets] = useState([])
-    const [token] = useState(localStorage.getItem('token' || '')
+    const [token] = useState(localStorage.getItem('token' || ''))
     const {setFlashMessage} = useFlashMessage()
 
 
